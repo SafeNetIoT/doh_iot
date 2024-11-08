@@ -1,0 +1,4 @@
+{
+    "max_nb_replayed": 30,
+    "max_nb_retries": 5
+}

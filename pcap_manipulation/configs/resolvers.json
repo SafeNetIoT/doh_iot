@@ -1,0 +1,86 @@
+{
+    "resolvers":{
+       "doh": [
+            {
+                "name": "Cloudflare",
+                "endpoint": "1.1.1.1", 
+                "up_index": 3,
+                "down_index": 5
+            },
+            {
+                "name": "Google",
+                "endpoint": "8.8.8.8",
+                "up_index": 3,
+                "down_index": 5
+            },
+            {
+                "name": "AdGuard",
+                "endpoint": "https://unfiltered.adguard-dns.com/dns-query",
+                "up_index": 3,
+                "down_index": 4
+            },
+            {
+                "name": "Quad9",
+                "endpoint": "https://dns.quad9.net/dns-query",
+                "up_index": 3,
+                "down_index": 7
+            },
+            {
+                "name": "CleanBrowsing",
+                "endpoint": "https://doh.cleanbrowsing.org/doh/security-filter/",
+                "up_index": 1,
+                "down_index": 2
+            },
+            {
+                "name": "NextDNS",
+                "endpoint": "https://dns.nextdns.io/4cc27d/",
+                "up_index": 3,
+                "down_index": 4
+            }
+       ],
+       "dot": [
+            {
+                "name": "Cloudflare",
+                "endpoint": "1.1.1.1",
+                "up_index": 2,
+                "down_index": 4
+            },
+            {
+                "name": "Google",
+                "endpoint": "8.8.8.8",
+                "up_index": 2,
+                "down_index": 4
+            },
+            {
+                "name": "Quad9",
+                "endpoint": "dns.quad9.net",
+                "up_index": 2,
+                "down_index": 5
+            },
+            {
+                "name": "CleanBrowsing",
+                "endpoint": "security-filter-dns.cleanbrowsing.org",
+                "up_index": 2,
+                "down_index": 3
+            },
+            {
+                "name": "NextDNS",
+                "endpoint": "4cc27d.dns.nextdns.io",
+                "up_index": 0,
+                "down_index": 1
+            },
+            {
+                "name": "AdGuard",
+                "endpoint": "unfiltered.adguard-dns.com",
+                "up_index": 2,
+                "down_index": 3
+            }
+        ]
+    },
+    "padding_strategies": {
+        "padding_no_padding": [0], 
+        "padding_128_bytes": [128],
+        "padding_random_block": [128,256,384,512]
+    },
+    "random_comment_key_for_future_use": "If you update the names of the padding strategies, also update scripts/instrument.sh. The rest should be automatic"
+}

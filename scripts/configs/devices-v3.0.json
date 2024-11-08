@@ -1,0 +1,27 @@
+{
+    "all_devices": [
+        "alexa_swan_kettle",
+        "aqara_hubM2",
+        "arlo_camera_pro4",
+        "boifun_baby",
+        "bose_speaker",
+        "cosori_air_fryer",
+        "echodot5",
+        "google_nest_doorbell",
+        "google_nest_hub",
+        "govee_strip_light",
+        "iROBOT_roomba",
+        "nest_cam",
+        "netatmo_weather_station",
+        "petsafe_feeder",
+        "ring_chime_pro",
+        "simplicam",
+        "sonos_speaker",
+        "switchbot_hub_mini_1",
+        "vtech_baby_monitor",
+        "withings_sleep_analyser",
+        "wiz_smart_bulb",
+        "wyze_cam_pan_v2"
+    ],
+    "comments": "based on 2023-10-19/2023-10-20"
+}

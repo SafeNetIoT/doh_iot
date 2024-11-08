@@ -1,0 +1,10 @@
+{
+  "max_nb_query": 30,
+  "length_multiplier": 2,
+  "qname_types": {
+    "complete": 0,
+    "4": 0,
+    "3": 0
+  },
+  "mac_addresses_config": "./scripts/configs/devices.sh"
+}

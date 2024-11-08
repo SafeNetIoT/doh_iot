@@ -1,0 +1,6 @@
+__pycache__/
+data/raw/
+data/replayed/
+data/features
+data/models/
+
