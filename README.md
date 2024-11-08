@@ -77,13 +77,6 @@ Tested with versions:
 - conda: 24.9.2
 - tshark: 4.0.10 and 4.2.0
 
-### Raw data
-While it is possible to draw figures from the results directly available in this repository, network traces are required to completely re-generate the results. 
-
-- Figure 7 ("*Performance evolution over 15 days*") requires raw data from `2023-10-19` to `2023-11-02`.
-- The rest (Figures 4, 5, 6, 8, and Table III) require data from `2023-11-22`. 
-Thus, place the corresponding data in `data/raw/<DATE>/` before starting the experiment pipeline.
-
 ### Run
 ```bash 
 ./experiments.sh
@@ -122,6 +115,9 @@ The pipeline is generally stable. However, the replay process may sometimes be c
 - `ConnectError`: the DNS resolver blocks the connection because of spammed requests.
 
 If you see them more than a few times, you may have tried to parallelize the process a bit too much. Your pain is valid.
+
+### Dataset 
+All pcap files are available in `data/dns_only`. As the path suggests, they contain *only* clear-text DNS requests, classified by device, and then date.
 
 ## IoT Devices 
 Each version uses a list of devices (`scripts/configs/devices-<VERSION>.json`), containing the list of devices names. Eg: 
